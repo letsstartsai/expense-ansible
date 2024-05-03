@@ -1,2 +1,8 @@
 [db]
-3.92.147.218
+db.dryfruitsspices.online
+
+[backend]
+backend.dryfruitsspices.online
+
+[frontend]
+dryfruitsspices.online
