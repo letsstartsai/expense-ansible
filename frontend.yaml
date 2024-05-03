@@ -1,0 +1,16 @@
+- name: configuring frontrnd server
+  hosts: frontend
+  become: yes
+  tasks:
+- name: installing nginx server
+  ansible.builtin.dnf:
+    name: nginx
+    state: latest
+
+- name: start and enable nginx
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes  
+
+      
