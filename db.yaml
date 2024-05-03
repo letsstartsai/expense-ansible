@@ -1,4 +1,4 @@
-- name: configure server
+- name: configure  DB Server
   hosts: db
   become: yes
   vars:
