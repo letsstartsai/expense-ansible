@@ -1,5 +1,5 @@
 - name: configure server
-  hostes:
+  hosts: db
   become: yes
   vars:
     login_host: db.dryfruitsspices.online
