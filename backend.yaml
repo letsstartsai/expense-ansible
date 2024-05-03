@@ -24,4 +24,14 @@
   - name: Create app directory
     ansible.builtin.file:
       name: /app
-      state: directory #when you mention state yes then only directory will create          
+      state: directory #when you mention state yes then only directory will create
+
+  - name: download backend code
+    ansible.builtin.get_url:   
+    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+    dest: /tmp/backend.zip
+
+  - name: unzip backend code
+    ansible.builtin.unarchive:
+      src: /tmp/backend.zip
+      dest: /app            
