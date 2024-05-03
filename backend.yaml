@@ -2,8 +2,8 @@
   hosts: backend
   become: yes
   vars:
-    login.host: db.dryfruitsspices.online
-    login.password: ExpenseApp@1
+    login_host: db.dryfruitsspices.online
+    login_password: ExpenseApp@1
 
   tasks:
   - name: disable default nodejs
